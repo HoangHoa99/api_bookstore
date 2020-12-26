@@ -91,7 +91,7 @@ passport.use(
     {
       clientID: config.facebook_api_key,
       clientSecret: config.facebook_api_secret,
-      callbackURL: "http://localhost:3001/auth/facebook/callback",
+      callbackURL: "/auth/facebook/callback",
     },
     function (accessToken, refreshToken, profile, done) {
       process.nextTick(function () {
